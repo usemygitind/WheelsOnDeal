@@ -1,0 +1,5 @@
+C:\Users\Shreesh\Desktop\WheelsOnDeal\WheelsOnDeal\WheelsOnDeal.Database\bin\Debug\WheelsOnDeal.Database.dacpac
+C:\Users\Shreesh\Desktop\WheelsOnDeal\WheelsOnDeal\WheelsOnDeal.Database\bin\Debug\WheelsOnDeal.Database.dll
+C:\Users\Shreesh\Desktop\WheelsOnDeal\WheelsOnDeal\WheelsOnDeal.Database\bin\Debug\WheelsOnDeal.Database.pdb
+C:\Users\Shreesh\Desktop\WheelsOnDeal\WheelsOnDeal\WheelsOnDeal.Database\obj\Debug\WheelsOnDeal.Database.dll
+C:\Users\Shreesh\Desktop\WheelsOnDeal\WheelsOnDeal\WheelsOnDeal.Database\obj\Debug\WheelsOnDeal.Database.pdb

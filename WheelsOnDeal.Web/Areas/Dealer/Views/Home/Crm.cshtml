@@ -1,0 +1,386 @@
+﻿
+@{
+    ViewBag.Title = "Crm";
+}
+
+<!-- begin app-main -->
+
+    <!-- begin container-fluid -->
+    <div class="container-fluid">
+        <!-- begin row -->
+        <div class="row">
+            <div class="col-md-12 m-b-30">
+                <!-- begin page title -->
+                <div class="user-welcome d-block d-xl-flex flex-nowrap align-items-center">
+                    <div class="bg-img mb-2 mb-xl-0 mr-3">
+                        <img class="img-fluid rounded" src="~/assets/img/avtar/06.jpg" alt="user">
+                    </div>
+                    <div class="page-title mb-2 mb-xl-0">
+                        <h1 class="mb-1">Good Morning, Michael!</h1>
+                        <p>You have 7 essential tasks today, 8 messages and notifications to respond.</p>
+                    </div>
+                    <div class="ml-auto d-flex align-items-center secondary-menu text-center">
+                        <a href="javascript:void(0);" class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Todo list">
+                            <i class="fe fe-edit btn btn-icon text-primary"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Projects">
+                            <i class="fa fa-lightbulb-o btn btn-icon text-success"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Task">
+                            <i class="fa fa-check btn btn-icon text-warning"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Calendar">
+                            <i class="fa fa-calendar-o btn btn-icon text-cyan"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Analytics">
+                            <i class="fa fa-bar-chart-o btn btn-icon text-danger"></i>
+                        </a>
+                    </div>
+                    <div class="ml-xl-4 mt-xl-0 ml-0 mt-3 d-flex align-items-center">
+                        <div class="dropdown">
+                            <a class="btn btn-primary" href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Add New
+                            </a>
+                            <div class="dropdown-menu custom-dropdown dropdown-menu-right dropdown-menu-left-mobile p-4">
+                                <a class="dropdown-item" href="#"><i class="ti ti-layers-alt"></i>Add Project </a>
+                                <a class="dropdown-item" href="#"><i class="ti ti-files"></i>Add Task </a>
+                                <a class="dropdown-item" href="#"><i class="ti ti-id-badge"></i>Add Team </a>
+                                <a class="dropdown-item" href="#"><i class="ti ti-pencil-alt"></i>Leave App </a>
+                                <a class="dropdown-item" href="#"><i class="ti ti-email"></i>New Message</a>
+                                <a class="dropdown-item" href="#"><i class="ti ti-user"></i>Edit Profile</a>
+                                <a class="dropdown-item" href="#"><i class="ti ti-settings"></i>Settings</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end page title -->
+        </div>
+        <!-- end row -->
+        <!-- begin row -->
+    
+        <div class="row">
+        
+            <div class="col-xxl-12 mb-30">
+                <div class="card card-statistics h-100 mb-0">
+                    <div class="card-header d-flex justify-content-between">
+                        <div class="card-heading">
+                            <h4 class="card-title">Ongoing projects</h4>
+                        </div>
+                        <div class="dropdown">
+                            <a class="p-2" href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fe fe-circle"></i>
+                            </a>
+                            <div class="dropdown-menu custom-dropdown dropdown-menu-right p-4">
+                                <h6 class="mb-1">Action</h6>
+                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-file-o pr-2"></i>View reports</a>
+                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-edit pr-2"></i>Edit reports</a>
+                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-bar-chart-o pr-2"></i>Statistics</a>
+                                <h6 class="mb-1 mt-3">Export</h6>
+                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-file-pdf-o pr-2"></i>Export to PDF</a>
+                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-file-excel-o pr-2"></i>Export to CSV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="max-h-600 scrollbar scroll_dark" style="height: 400px">
+                            <div class="table-responsive">
+                                <table id="datatable-buttons" class="table mb-0 table-borderless">
+                                    <thead class="bg-light">
+                                        <tr>
+                                            <th>Lead Name </th>
+                                            <th> Start Date </th>
+                                            <th> Due Date </th>
+                                            <th>Sales Person </th>
+                                            <th>Status</th>
+                                            <th>Vehicle Name</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-muted">
+                                        <tr>
+                                            <td>App Design and development </td>
+                                            <td>Dec 03, 2018 </td>
+                                            <td>Dec 25, 2018 </td>
+                                            <td class="pl-4">
+                                                <div class="bg-img-group">
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Brian" href="#"> <img class="img-fluid" src="~/assets/img/avtar/01.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Smithdro" href="#"> <img class="img-fluid" src="~/assets/img/avtar/02.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Adrian Demiandro" href="#"> <img class="img-fluid" src="~/assets/img/avtar/03.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Sandradro Garett" href="#"> <img class="img-fluid" src="~/assets/img/avtar/04.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-more bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="View all" href="#"><span>12+</span> </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><label class="badge badge-info-inverse">On Hold</label></td>
+                                            <td>Brian</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Coffee Detail page - main page </td>
+                                            <td>Jan 12, 2019 </td>
+                                            <td>Feb 22, 2019 </td>
+                                            <td class="pl-4">
+                                                <div class="bg-img-group">
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Brian" href="#"> <img class="img-fluid" src="~/assets/img/avtar/05.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Smithdro" href="#"> <img class="img-fluid" src="~/assets/img/avtar/06.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Adrian Demiandro" href="#"> <img class="img-fluid" src="~/assets/img/avtar/07.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-more bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="View all" href="#"><span>10+</span> </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><label class="badge badge-danger-inverse">Pending</label></td>
+                                            <td>Smithdro</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Poster illustrater Design </td>
+                                            <td>Feb 12, 2019 </td>
+                                            <td>Mar 25, 2019 </td>
+                                            <td class="pl-4">
+                                                <div class="bg-img-group">
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Brian" href="#"> <img class="img-fluid" src="~/assets/img/avtar/09.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Smithdro" href="#"> <img class="img-fluid" src="~/assets/img/avtar/03.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Adrian Demiandro" href="#"> <img class="img-fluid" src="~/assets/img/avtar/01.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Garydro" href="#"> <img class="img-fluid" src="~/assets/img/avtar/02.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-more bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="View all" href="#"><span>5+</span> </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><label class="badge badge-primary-inverse">Working</label></td>
+                                            <td>Adrian Demiandro</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Drinking Bottel Design </td>
+                                            <td>Apr 30, 2019 </td>
+                                            <td>Apr 25, 2019 </td>
+                                            <td class="pl-4">
+                                                <div class="bg-img-group">
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Brian" href="#"> <img class="img-fluid" src="~/assets/img/avtar/03.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Smithdro" href="#"> <img class="img-fluid" src="~/assets/img/avtar/04.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Adrian Demiandro" href="#"> <img class="img-fluid" src="~/assets/img/avtar/05.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Garydro" href="#"> <img class="img-fluid" src="~/assets/img/avtar/06.jpg" alt="user"></a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><label class="badge badge-success-inverse">Completed</label></td>
+                                            <td>Sandradro Garett</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Design and development </td>
+                                            <td>May 04, 2019 </td>
+                                            <td>Jun 06, 2019 </td>
+                                            <td class="pl-4">
+                                                <div class="bg-img-group">
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Brian" href="#"> <img class="img-fluid" src="~/assets/img/avtar/07.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Smithdro" href="#"> <img class="img-fluid" src="~/assets/img/avtar/08.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Adrian Demiandro" href="#"> <img class="img-fluid" src="~/assets/img/avtar/09.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-more bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="View all" href="#"><span>5+</span> </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><label class="badge badge-success-inverse">Completed</label></td>
+                                            <td>Garydro</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Landing page Design - Home </td>
+                                            <td>Jul 12, 2019 </td>
+                                            <td>Jul 26, 2019 </td>
+                                            <td class="pl-4">
+                                                <div class="bg-img-group">
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Brian" href="#"> <img class="img-fluid" src="~/assets/img/avtar/03.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Smithdro" href="#"> <img class="img-fluid" src="~/assets/img/avtar/04.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Adrian Demiandro" href="#"> <img class="img-fluid" src="~/assets/img/avtar/05.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Garydro" href="#"> <img class="img-fluid" src="~/assets/img/avtar/06.jpg" alt="user"></a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><label class="badge badge-primary-inverse">Working</label></td>
+                                            <td>Brian Joedro</td>
+                                        </tr>
+                                        <tr>
+                                            <td>App Design and development </td>
+                                            <td>Aug 04, 2019 </td>
+                                            <td>Aug 23, 2019 </td>
+                                            <td class="pl-4">
+                                                <div class="bg-img-group">
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Brian" href="#"> <img class="img-fluid" src="~/assets/img/avtar/07.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Smithdro" href="#"> <img class="img-fluid" src="~/assets/img/avtar/08.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Adrian Demiandro" href="#"> <img class="img-fluid" src="~/assets/img/avtar/05.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-more bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="View all" href="#"><span>6+</span> </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><label class="badge badge-info-inverse">On Hold</label></td>
+                                            <td>Alice Williams</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Coffee Detail page - main page </td>
+                                            <td>Dec 05, 2019 </td>
+                                            <td>Dec 25, 2019 </td>
+                                            <td class="pl-4">
+                                                <div class="bg-img-group">
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Brian" href="#"> <img class="img-fluid" src="~/assets/img/avtar/06.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Smithdro" href="#"> <img class="img-fluid" src="~/assets/img/avtar/02.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Adrian Demiandro" href="#"> <img class="img-fluid" src="~/assets/img/avtar/07.jpg" alt="user"></a>
+                                                    </div>
+                                                    <div class="bg-img bg-img-sm">
+                                                        <a class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="Garydro" href="#"> <img class="img-fluid" src="~/assets/img/avtar/08.jpg" alt="user"></a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><label class="badge badge-primary-inverse">Working</label></td>
+                                            <td>Sandradro Garet</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        
+            <div class="col-xxl-12 mb-30">
+                <div class="card card-statistics h-100 mb-0">
+                    <div class="card-header d-flex justify-content-between">
+                        <div class="card-heading">
+                            <h4 class="card-title">Lead Activity</h4>
+                        </div>
+                        <div class="dropdown">
+                            <a class="p-2" href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fe fe-more-horizontal"></i>
+                            </a>
+                            <div class="dropdown-menu custom-dropdown dropdown-menu-right p-4">
+                                <h6 class="mb-1">Action</h6>
+                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-file-o pr-2"></i>View reports</a>
+                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-edit pr-2"></i>Edit reports</a>
+                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-bar-chart-o pr-2"></i>Statistics</a>
+                                <h6 class="mb-1 mt-3">Export</h6>
+                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-file-pdf-o pr-2"></i>Export to PDF</a>
+                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-file-excel-o pr-2"></i>Export to CSV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="activity">
+                            <li class="activity-item primary">
+                                <div class="activity-info">
+                                    <h5 class="mb-0">Initial Briefing</h5>
+                                    <span>10:30 AM</span>
+                                </div>
+                            </li>
+                            <li class="activity-item info">
+                                <div class="activity-info">
+                                    <h5 class="mb-0"> Assign task for Smith. </h5>
+                                    <span>
+                                        11.00 AM
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="activity-item success">
+                                <div class="activity-info">
+                                    <h5 class="mb-0"> Complete milestone 3 and update. </h5>
+                                    <span>
+                                        2.00 PM
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="activity-item danger">
+                                <div class="activity-info">
+                                    <h5 class="mb-0">Start new task with mark. </h5>
+                                    <span>
+                                        4.00 PM
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="activity-item warning">
+                                <div class="activity-info">
+                                    <h5 class="mb-0">Release first milestone</h5>
+                                    <span>5.30 PM</span>
+                                </div>
+                            </li>
+                            <li class="activity-item info">
+                                <div class="activity-info">
+                                    <h5 class="mb-0"> Meeting with client and CEO.</h5>
+                                    <span>
+                                        6.30 PM
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="activity-item success">
+                                <div class="activity-info">
+                                    <h5 class="mb-0">Meeting with Amanda and team.</h5>
+                                    <span>
+                                        8.00 PM
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container-fluid -->
+
+<!-- end app-container -->
+

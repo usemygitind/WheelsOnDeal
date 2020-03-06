@@ -1,0 +1,5 @@
+C:\Users\Shreesh\Desktop\WheelsOnDeal\WheelsOnDeal\WheelsOnDeal.Common\bin\Debug\WheelsOnDeal.Common.dll
+C:\Users\Shreesh\Desktop\WheelsOnDeal\WheelsOnDeal\WheelsOnDeal.Common\bin\Debug\WheelsOnDeal.Common.pdb
+C:\Users\Shreesh\Desktop\WheelsOnDeal\WheelsOnDeal\WheelsOnDeal.Common\obj\Debug\WheelsOnDeal.Common.csprojResolveAssemblyReference.cache
+C:\Users\Shreesh\Desktop\WheelsOnDeal\WheelsOnDeal\WheelsOnDeal.Common\obj\Debug\WheelsOnDeal.Common.dll
+C:\Users\Shreesh\Desktop\WheelsOnDeal\WheelsOnDeal\WheelsOnDeal.Common\obj\Debug\WheelsOnDeal.Common.pdb

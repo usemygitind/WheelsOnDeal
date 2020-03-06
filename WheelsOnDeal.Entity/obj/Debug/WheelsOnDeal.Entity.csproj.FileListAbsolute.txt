@@ -1,0 +1,4 @@
+C:\Users\Shreesh\Desktop\WheelsOnDeal\WheelsOnDeal\WheelsOnDeal.Entity\bin\Debug\WheelsOnDeal.Entity.dll
+C:\Users\Shreesh\Desktop\WheelsOnDeal\WheelsOnDeal\WheelsOnDeal.Entity\bin\Debug\WheelsOnDeal.Entity.pdb
+C:\Users\Shreesh\Desktop\WheelsOnDeal\WheelsOnDeal\WheelsOnDeal.Entity\obj\Debug\WheelsOnDeal.Entity.dll
+C:\Users\Shreesh\Desktop\WheelsOnDeal\WheelsOnDeal\WheelsOnDeal.Entity\obj\Debug\WheelsOnDeal.Entity.pdb
